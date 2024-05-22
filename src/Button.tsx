@@ -1,19 +1,19 @@
+// src/components/ToggleButton.tsx
 import React from 'react';
 
-interface ButtonProps {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+const ToggleButton: React.FC = () => {
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle('dark');
+  };
 
-const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <button
-      onClick={onClick}
-      className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-blue-600 transition duration-300"
+      onClick={toggleDarkMode}
+      className="ml-4 px-4 py-2 bg-blue-500 text-white rounded"
     >
-      {children}
+      Toggle Dark Mode
     </button>
   );
 };
 
-export default Button;
+export default ToggleButton;
