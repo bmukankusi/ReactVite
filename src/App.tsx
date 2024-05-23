@@ -1,6 +1,6 @@
-// src/App.tsx
+
 import React from 'react';
-import ToggleButton from './Button';
+import ToggleButton from './Components/Button';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import backgroundImage from './assets/background.png'; // Import the image
 
